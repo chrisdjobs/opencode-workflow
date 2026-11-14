@@ -1,8 +1,8 @@
 ---
-description: Plan a goal into PLAN.md (asks questions first)
+description: Plan a request in the chat (read-only, asks questions first)
 agent: plan
 ---
 
-Goal: $ARGUMENTS
+Request: $ARGUMENTS
 
-Read docs/spec.md, docs/decisions.md and the relevant code. Ask what you need, then write PLAN.md as defined in your instructions.
+Read what you need, ask what would change the plan, then present the plan in the chat as defined in your instructions.

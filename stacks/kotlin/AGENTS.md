@@ -1,6 +1,6 @@
 # AGENTS.md — Kotlin (Android default; JVM/KMP noted)
 
-Workflow files: `docs/spec.md` (what the project is), `docs/decisions.md` (decisions made), `PLAN.md` (current plan). Read them before planning or coding.
+Project spec: `docs/spec.md` (what the project is). Read it before planning or coding.
 
 ## Verify (run all before calling any step done)
 1. `./gradlew check` — runs unit tests, lint, and ktlint/detekt/spotless if the project configures them.

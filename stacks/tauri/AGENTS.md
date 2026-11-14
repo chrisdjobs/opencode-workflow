@@ -1,6 +1,6 @@
 # AGENTS.md — Tauri (v2 assumed) + web frontend
 
-Workflow files: `docs/spec.md` (what the project is), `docs/decisions.md` (decisions made), `PLAN.md` (current plan). Read them before planning or coding.
+Project spec: `docs/spec.md` (what the project is). Read it before planning or coding.
 
 ## Verify (run all, in order, before calling any step done)
 Rust (from `src-tauri/`):

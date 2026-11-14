@@ -1,6 +1,6 @@
 # AGENTS.md — Web (TypeScript: Next.js / Astro)
 
-Workflow files: `docs/spec.md` (what the project is), `docs/decisions.md` (decisions made), `PLAN.md` (current plan). Read them before planning or coding.
+Project spec: `docs/spec.md` (what the project is). Read it before planning or coding.
 
 ## Verify (run all, in order, before calling any step done)
 Use the package manager the repo already uses (the lockfile decides). Examples with pnpm:

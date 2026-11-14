@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Usage: ./new-project.sh <flutter|web-ts|kotlin|tauri> [target-dir]
-# Copies the stack AGENTS.md and the docs templates into the project.
+# Copies the stack AGENTS.md and the spec template into the project.
 # Never overwrites a file that already exists.
 set -euo pipefail
 
@@ -28,12 +28,13 @@ copy_safe() {
 
 copy_safe "$ROOT/stacks/$STACK/AGENTS.md" "$TARGET/AGENTS.md"
 copy_safe "$ROOT/templates/spec.md"       "$TARGET/docs/spec.md"
-copy_safe "$ROOT/templates/decisions.md"  "$TARGET/docs/decisions.md"
 
 cat <<MSG
 
 Next:
   1. Fill in the "Project-specific" block of $TARGET/AGENTS.md
   2. Write $TARGET/docs/spec.md
-  3. cd $TARGET && opencode   ->   /plan <goal>   ->   /build   ->   /review   ->   /tests
+  3. git init (the builder commits), then cd $TARGET && opencode
+  4. Tab to the planner, say what you want, adjust the plan in chat
+  5. Tab to the builder (or /build <constraints>) -> /review <intent> -> /tests <intent>
 MSG

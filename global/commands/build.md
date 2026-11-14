@@ -1,6 +1,6 @@
 ---
-description: Execute the next unchecked step of PLAN.md (or a given step number, or "all")
+description: Implement the approved plan under the given constraints
 agent: build
 ---
 
-Execute PLAN.md. Argument: "$ARGUMENTS". Empty means the next unchecked step, a number means that step, "all" means continue step by step until done or until something fails.
+Implement the plan approved in this conversation. Constraints and instructions: $ARGUMENTS
