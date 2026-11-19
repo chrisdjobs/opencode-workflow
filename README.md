@@ -1,4 +1,4 @@
-# ai-workflow
+# opencode-workflow
 
 A small, reusable setup for working with AI in [opencode](https://opencode.ai): four role agents
 (planner, builder, reviewer, tester), each on a different model, plus one short rules file per tech stack
@@ -121,7 +121,7 @@ opencode docs for where that is on your system). Some verify commands in `stacks
 (for example `./gradlew`); adjust them if you work natively on Windows.
 
 ```bash
-git clone https://github.com/YOUR_USER/ai-workflow && cd ai-workflow
+git clone https://github.com/YOUR_USER/opencode-workflow && cd opencode-workflow
 chmod +x *.sh
 
 ./install-global.sh --list          # list profiles (* = active)
@@ -160,7 +160,7 @@ model diversity and lose the context isolation.
 ## Folder reference
 
 ```
-ai-workflow/
+opencode-workflow/
 ├── profiles/            which model plays which role
 ├── global/
 │   ├── agents/          plan, build, review, test   -> ~/.config/opencode/agents/
