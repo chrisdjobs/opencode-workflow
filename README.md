@@ -125,7 +125,10 @@ git clone https://github.com/YOUR_USER/opencode-workflow && cd opencode-workflow
 chmod +x *.sh
 
 ./install-global.sh --list          # list profiles (* = active)
+
 ./install-global.sh                 # default profile: mixed-free
+# or
+./install-global.sh profile-name    # to set the profile you prefer
 
 ./new-project.sh flutter ~/code/my-app
 cd ~/code/my-app && git init        # the builder commits, so it needs a repo
